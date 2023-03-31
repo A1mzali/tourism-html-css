@@ -20,3 +20,10 @@
  column-gap: 8px;
  align-items: center;
 }
+
+.button--search{
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  
+}
