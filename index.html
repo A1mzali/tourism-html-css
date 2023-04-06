@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tourism</title>
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/libs/autoComplete/css/autoComplete.01.css">
 
   </head>
     <body>
@@ -18,15 +19,100 @@
 
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="" class="nav-lixt__link"></a>
+              <a href="#" class="nav-list__link--active">home</a>
             </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">hotels</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">restaurant</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">tours</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">destinations</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">activities</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">contact</a>
+            </li>
+            
           </ul>
+
+          <div class="user">
+            <div class="user__content">
+              <span class="user__greeating">Holla,</span>
+              <span class="user__name">Ales Nesetril</span>
+              
+            </div>
+            <div class="user__avatar">
+              <img class="user__img" src="./img/header/user.jpg" alt="Avatar">
+            </div>
+          </div>
         </nav>
-        <div>Title</div>
-        <div>Form</div>
+
+        <div class="header__content">
+          <h1 class="header__title">
+            Discover the most engaging places
+          </h1>
+          <button class="button button--huge">
+            <img src="./img/icons/global.svg" alt="">
+            Discover on 3D Globe
+          </button>
+        </div>
+
+
+        <form action="" class="form">
+
+          <div class="form__input-wrapper form__input--location">
+            <label for="location" class="form_label">Location</label>
+            <input type="text" placeholder="Explore nearby destinations" class="form_input" id="location">
+          </div>
+
+          <div class="form__input-wrapper form__input--activity">
+            <label for="activity" class="form_label">Activity</label>
+            <select name="activity" id="activity" class="form-class">
+              <option value="all">All Activities</option>
+              <option value="culture">Culture</option>
+              <option value="sport">Sport</option>
+              <option value="extrim">Extrim</option>
+            </select>
+          </div>
+
+          <div class="form__input-wrapper form__input--date">
+            <label for="date" class="form_label">When</label>
+            <input type="date" placeholder="Choose a Date" class="form_input" id="location">
+          </div>
+
+          <div class="form__input-wrapper form__input--guests">
+            <label for="guests" class="form_label">Guests</label>
+            <select name="guests" id="guests" class="form__select">
+              <option value="all">1 guests</option>
+              <option value="all">2 guests</option>
+              <option value="all">3 guests</option>
+              <option value="all">4 guests</option>
+              <option value="all">5 guets or more</option>
+             
+            </select>
+          </div>
+
+          <div class="button button button--search">
+            <img src="./img/icons/search.svg" alt="search">
+          </div>
+
+
+
+        </form>
+
+
 
        </div>
-      
      </header>
+
+     <script src="./libs/autoComplete/autoComplete.min.js"></script>
+     <script src="./js/input-dest.js"></script>
     </body>
   </html>
