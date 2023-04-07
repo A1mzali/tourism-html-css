@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import './buttons.css';
 
+
 body {
 	font-family: 'Poppins', sans-serif;
 }
@@ -191,4 +192,108 @@ body {
 
 .form__input::placeholder {
     color: #000;
+}
+
+
+/* Main */
+
+.title-1 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1, 5;
+	color: #161414;
+}
+
+.main {
+	padding: 120px 0;
+	display: grid;
+	gap: 120px;
+}
+
+.section__header {
+	margin-bottom: 64px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section__cards {
+	display: grid;
+	gap: 32px;
+}
+
+.section__cards--6-in-row {
+grid-template-columns: repeat(6, 1fr);
+}
+
+.section__cards--4-in-row {
+grid-template-columns: repeat(4, 1fr);
+}
+
+.section__cards--2-in-row {
+grid-template-columns: repeat(2, 1fr);
+}
+
+/* Card */
+
+.card {
+	position: relative;
+}
+
+.card--wide {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+}
+
+.card__link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card__img {
+	width: 100%;
+	border-radius: 12px;
+	margin-bottom: 8px;
+	object-fit: cover;
+}
+
+.card__img--h100 {
+	height: 100%;
+}
+
+.card__img--hotel {
+	margin-bottom: 10px;
+}
+
+.card__img--no-margin {
+	margin: 0;
+}
+
+.card__title {
+	color: #161414;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.card__title--hotel {
+	margin-bottom: 12px;
+}
+
+.card__img--activities {
+	margin-bottom: 16px;
+}
+
+.card__location {
+	position: relative;
+	z-index: 1;
+	color: #979797;
+	font-size: 13px;
+}
+
+.card__location:hover {
+	color: #7B61FF;
 }

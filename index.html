@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/libs/autoComplete/css/autoComplete.01.css">
   <link rel="stylesheet" href="/libs/custom-select/custom-select.css">
+  <!-- <link rel="stylesheet" href="./libs/easepick/easpick.min.css"> -->
 
   </head>
     <body>
-     <header class="header">
+     <header class="header none">
        <div class="container container--header">
         <nav class="nav">
           <a href="#!" class="logo">
@@ -84,9 +85,9 @@
           </div>
 
           <div class="form__input-wrapper form__input--date">
-            <label for="date" class="form_label">When</label>
-            <input type="date" placeholder="Choose a Date" class="form_input" id="location">
-          </div>
+            <label for="date" class="form__label">When</label>
+            <input type="text" class="form__input" id="date" placeholder="Choose a Date">
+           </div>
 
           <div class="form__input-wrapper form__input--guests">
             <label for="guests" class="form_label">Guests</label>
@@ -113,9 +114,90 @@
        </div>
      </header>
 
+     <main class="main">
+      <!-- Popular -->
+        <section class="section">
+          <div class="container">
+              <div class="section__header">
+                  <h2 class="title-1">Popular Destinations</h2>
+              </div>
+              <div class="section__cards section__cards--6-in-row">
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/01.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/02.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/03.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/04.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/05.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/06.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+              </div>
+          </div>
+        </section>
+
+        <!-- Hotels  -->
+        <section class="section">
+          <div class="container">
+              <div class="section__header">
+                  <h2 class="title-1">Hotels and Restaurants</h2>
+                  <a href="#!" class="button--more">View all
+                    <img src="./img/icons/arrow-more.svg" alt="">
+                  </a>
+              </div>
+              <div class="section__cards section__cards--6-in-row">
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/hotels/" alt="Img">
+                      <h3 class="card__title">Monastero Santa Rosa Hotel & Spa</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  
+              </div>
+          </div>
+        </section>
+
+
+
+     </main>
+
      <script src="./libs/autoComplete/autoComplete.min.js"></script>
      <script src="./libs/custom-select/custom-select.min.js"></script>
-
+     <script src="./libs/easepick/easepick.min.js"></script>
 
      <script src="./js/input-dest.js"></script>
      <script src="./js/main.js"></script>
