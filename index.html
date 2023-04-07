@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tourism</title>
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/libs/autoComplete/css/autoComplete.01.css">
+  <link rel="stylesheet" href="/libs/custom-select/custom-select.css">
+  <!-- <link rel="stylesheet" href="./libs/easepick/easpick.min.css"> -->
 
   </head>
     <body>
-     <header class="header">
+     <header class="header none">
        <div class="container container--header">
         <nav class="nav">
           <a href="#!" class="logo">
@@ -18,15 +21,185 @@
 
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="" class="nav-lixt__link"></a>
+              <a href="#" class="nav-list__link--active">home</a>
             </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">hotels</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">restaurant</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">tours</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">destinations</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">activities</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">contact</a>
+            </li>
+            
           </ul>
+
+          <div class="user">
+            <div class="user__content">
+              <span class="user__greeating">Holla,</span>
+              <span class="user__name">Ales Nesetril</span>
+              
+            </div>
+            <div class="user__avatar">
+              <img class="user__img" src="./img/header/user.jpg" alt="Avatar">
+            </div>
+          </div>
         </nav>
-        <div>Title</div>
-        <div>Form</div>
+
+        <div class="header__content">
+          <h1 class="header__title">
+            Discover the most engaging places
+          </h1>
+          <button class="button button--huge">
+            <img src="./img/icons/global.svg" alt="">
+            Discover on 3D Globe
+          </button>
+        </div>
+
+
+        <form action="" class="form">
+
+          <div class="form__input-wrapper form__input--location">
+            <label for="location" class="form_label">Location</label>
+            <input type="text" placeholder="Explore nearby destinations" class="form_input" id="location">
+          </div>
+
+          <div class="form__input-wrapper form__input--activity">
+            <label for="activity" class="form_label">Activity</label>
+            <select name="activity" id="activity" class="form-class">
+              <option value="all">All Activities</option>
+              <option value="culture">Culture</option>
+              <option value="sport">Sport</option>
+              <option value="extrim">Extrim</option>
+            </select>
+          </div>
+
+          <div class="form__input-wrapper form__input--date">
+            <label for="date" class="form__label">When</label>
+            <input type="text" class="form__input" id="date" placeholder="Choose a Date">
+           </div>
+
+          <div class="form__input-wrapper form__input--guests">
+            <label for="guests" class="form_label">Guests</label>
+            <select name="guests" id="guests" class="form__select">
+              <option value="all">1 guests</option>
+              <option value="all">2 guests</option>
+              <option value="all">3 guests</option>
+              <option value="all">4 guests</option>
+              <option value="all">5 guets or more</option>
+             
+            </select>
+          </div>
+
+          <div class="button button button--search">
+            <img src="./img/icons/search.svg" alt="search">
+          </div>
+
+
+
+        </form>
+
+
 
        </div>
-      
      </header>
+
+     <main class="main">
+      <!-- Popular -->
+        <section class="section">
+          <div class="container">
+              <div class="section__header">
+                  <h2 class="title-1">Popular Destinations</h2>
+              </div>
+              <div class="section__cards section__cards--6-in-row">
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/01.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/02.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/03.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/04.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/05.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/popular/06.jpg" alt="Img">
+                      <h3 class="card__title">Big Sur</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+              </div>
+          </div>
+        </section>
+
+        <!-- Hotels  -->
+        <section class="section">
+          <div class="container">
+              <div class="section__header">
+                  <h2 class="title-1">Hotels and Restaurants</h2>
+                  <a href="#!" class="button--more">View all
+                    <img src="./img/icons/arrow-more.svg" alt="">
+                  </a>
+              </div>
+              <div class="section__cards section__cards--6-in-row">
+
+                  <article class="card">
+                      <a href="#!" class="card__link"></a>
+                      <img class="card__img" src="./img/hotels/" alt="Img">
+                      <h3 class="card__title">Monastero Santa Rosa Hotel & Spa</h3>
+                      <a href="#california" class="card__location">California, USA</a>
+                  </article>
+
+                  
+              </div>
+          </div>
+        </section>
+
+
+
+     </main>
+
+     <script src="./libs/autoComplete/autoComplete.min.js"></script>
+     <script src="./libs/custom-select/custom-select.min.js"></script>
+     <script src="./libs/easepick/easepick.min.js"></script>
+
+     <script src="./js/input-dest.js"></script>
+     <script src="./js/main.js"></script>
     </body>
   </html>
