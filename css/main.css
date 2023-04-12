@@ -1,10 +1,11 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-@import './buttons.css';
+@import './button.css';
 
 
 body {
 	font-family: 'Poppins', sans-serif;
+	color: #161414;
 }
 
 .none {
@@ -365,5 +366,110 @@ grid-template-columns: repeat(2, 1fr);
 }
 .card__footer-link--comments{
 	background-image: url('./../img/icons/comment.svg');
+
+}
+
+/* About Us */
+
+.about-us{
+	margin: 0 auto;
+	min-width: 1144px;
+	display: grid;
+	gap: 32px;
+	grid-template-columns: repeat(2, 1fr);
+
+}
+
+.about-us__desc{
+	display: grid;
+	gap: 32px;
+	align-content: center;    
+
+}
+
+.about-us__title{
+   font-size: 32px;
+	 font-weight: 600;
+   
+}
+
+.about-us__text{
+	font-size: 16px;
+	color:#5B5B5B;
+  line-height: 2;
+
+}
+
+.about-us__btn{
+	justify-self:flex-start ;
+
+}
+
+.about-us__img{
+   border-radius: 24px;
+}
+
+/* Footer */
+
+.footer{
+  background-color: #F9F9F9;
+	padding: 120px 0;
+}
+
+.footer__row{
+ display: grid;
+ gap: 64px;
+ grid-template-columns: repeat(3, auto);
+}
+
+.footer_copyrigt{
+	max-width: 354px;
+	display: grid;
+	gap: 16px;
+}
+
+.footer__logo{
+
+
+}
+
+.footer_text{
+	margin-bottom: 16px;
+	font-size: 13px;
+	color: #5B5B5B;
+}
+
+.footer__socials{
+ display: flex;
+ gap: 32px;
+ align-items: center;
+}
+
+.footer_nav-wrapper{
+
+}
+
+.footer__nav{
+
+}
+
+.footer__nav-title{
+
+}
+
+.footer__nav-list{
+
+}
+
+.footer__nav-item{
+
+}
+
+.footer__nav-link{
+
+}
+
+
+.footer_subscribe{
 
 }

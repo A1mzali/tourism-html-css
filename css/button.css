@@ -28,19 +28,22 @@
   
 }
 
-.button--more{
+
+.button-more {
   display: flex;
   align-items: center;
   gap: 4px;
+
   padding: 10px;
   height: 44px;
   background: #F6F4FF;
   border-radius: 12px;
-  transition: background-color 0.2s ease-in;
   font-size: 16px;
   color: #5243C2;
+
+  transition: background-color 0.2s ease-in;
 }
 
-.button--more:hover {
-  background: #895dd5;
+.button-more:hover {
+  background: #dcd8f1;
 }
