@@ -28,6 +28,12 @@
   
 }
 
+.button--subscribe{
+  width: 72px;
+  height: 72px;
+  padding: 28px;
+}
+
 
 .button-more {
   display: flex;
