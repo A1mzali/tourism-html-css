@@ -13,7 +13,7 @@
 
   </head>
     <body>
-     <header class="header ">
+     <header class="header">
        <div class="container container--header">
         <nav class="nav">
           <a href="#!" class="logo">
@@ -75,7 +75,7 @@
         </div>
 
 
-        <form action="" class="form none">
+        <form action="" class="form">
 
           <div class="form__input-wrapper form__input--location">
             <label for="location" class="form_label">Location</label>
@@ -92,7 +92,7 @@
             </select>
           </div>
 
-          <div class="form__input-wrapper form__input--date">
+          <div class="form__input-wrapper form__input--when">
             <label for="date" class="form__label">When</label>
             <input type="text" class="form__input" id="date" placeholder="Choose a Date">
            </div>
@@ -109,7 +109,7 @@
             </select>
           </div>
 
-          <div class="button button button--search">
+          <div class="button button--search">
             <img src="./img/icons/search.svg" alt="search">
           </div>
 
@@ -122,24 +122,22 @@
        </div>
      </header>
 
-     <div class="mobile-nav-fade">
+     <div class="mobile-nav-fade"></div>
       <div class="mobile-nav">
         <ul class="mobile-nav__list">
-          <a href="#" class="active">Home</a>
-          <a href="#" class="active">hotels</a>
-          <a href="#" class="active">restaraurants</a>
-          <a href="#" class="active">tours</a>
-          <a href="#" class="active">destinations</a>
-          <a href="#" class="active">activities</a>
-          <a href="#" class="active">contact</a>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">hotels</a></li>
+          <li><a href="#">restaraurants</a></li>
+          <li><a href="#">tours</a></li>
+          <li><a href="#">destinations</a></li>
+          <li><a href="#">activities</a></li>
+          <li><a href="#">contact</a></li>
         </ul> 
       </div>
-     </div>
-
-
-     <main class="main none">
+     
+     <main class="main">
       <!-- Popular -->
-        <section class="section ">
+        <section class="section">
           <div class="container">
               <div class="section__header">
                   <h2 class="title-1">Popular Destinations</h2>
@@ -192,7 +190,7 @@
         </section>
 
         <!-- Hotels  -->
-        <section class="section ">
+        <section class="section">
           <div class="container">
               <div class="section__header">
                   <h2 class="title-1">Hotels and Restaurants</h2>
@@ -277,7 +275,7 @@
         </section>
 
         <!-- Travel -->
-        <section class="section ">
+        <section class="section">
           <div class="container">
               <div class="section__header">
                   <h2 class="title-1">Travel Tips and Advice</h2>
@@ -290,7 +288,7 @@
 
                   <article class="card card--wide">
                       <a href="#!" class="card__link"></a>
-                      <img class="card__img card__img--no-margin" src="./img/tips/01.jpg" alt="Img">
+                      <img class="card__img card__img--no-margin card__img--h100" src="./img/tips/01.jpg" alt="Img">
                       
                       <div class="card__desc">
                         <h3 class="card__title card__title--big">East Village Ice Cream Crawl</h3>
@@ -306,7 +304,7 @@
                   </article>
                   <article class="card card--wide">
                       <a href="#!" class="card__link"></a>
-                      <img class="card__img card__img--no-margin" src="./img/tips/02.jpg" alt="Img">
+                      <img class="card__img card__img--no-margin card__img--h100" src="./img/tips/02.jpg" alt="Img">
                       
                       <div class="card__desc">
                         <h3 class="card__title card__title--big">Brooklyn Bridge cinematic photo walk</h3>
@@ -328,7 +326,7 @@
         </section>
 
         <!-- Ativities  -->
-        <section class="section ">
+        <section class="section">
           <div class="container">
               <header class="section__header">
                 <h2 class="title-1">Activities</h2>
@@ -368,26 +366,25 @@
         </section>
  
         <!-- About us -->
-        <section>
-          <div class="container">
-            <div class="about-us">
-              <div class="about-us__desc">
-                <h3 class="about-us__title">About Us</h3>
-                <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                <div class="about-us__btn">
-                  <a href="#" class="button-more">Read more </a>
+        <section class="section">
+            <div class="container">
+                <div class="about-us">
+                    <div class="about-us__desc">
+                        <h3 class="about-us__title">About Us</h3>
+                        <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <div class="about-us__btn">
+                            <a href="#" class="button-more">Read more <img src="./img/icons/arrow-more.svg" alt="Arrow"></a>
+                        </div>
+                    </div>
+                    <img src="./img/about-us/about.jpg" alt="" class="about-us__img">
                 </div>
-              </div>
-              <img src="./img/about-us/about.jpg" alt="" class="about-us__img">
             </div>
-          </div>
-        </section>
+           </section>
 
 
      </main>
 
-     <footer class="footer none">
+     <footer class="footer">
       <div class="container">
         <div class="footer__row">
           <div class="footer_copyrigt">
@@ -481,7 +478,7 @@
 
             <form action="" class="subscribe">
               <div class="subscribe__input--wrapper">
-                <input type="email" class="subscribe__input"  required>
+                <input type="email" class="subscribe__input"  required style="width: 100%;">
                 <label for="" class="subscribe__label">Your Email</label>
               </div>
               <div class="subscribe__btn--wrapper">
@@ -503,6 +500,8 @@
      <script src="./libs/easepick/easepick.min.js"></script>
 
      <script src="./js/input-dest.js"></script>
+     <script src="./js/mobile-nav.js"></script>
      <script src="./js/main.js"></script>
+     
     </body>
   </html>
