@@ -3,7 +3,6 @@
  background-color: #7b61ff;
  border-radius: 12px;
  color: #fff;
-
  transition: background-color 0.2s ease-in;
 }
 
@@ -25,15 +24,13 @@
   .button--huge{
     padding: 12px;
   }
-  
 }
 
 .button--search{
   width: 60px;
   height: 60px;
   padding: 18px;
-  text-align: center;
-  
+  text-align: center; 
 }
 
 .button--subscribe{
